@@ -1,14 +1,15 @@
 body {
-	background-color: #CDE;
+	background-color: #DBFFD8;
 }
 #container {
-	margin: 10% auto;
-	width: 680px;
 	height: 320px;
 	border-radius: 5px;
+	width: 680px;
 	background-color: #fff;
-	-moz-transition: width 5s linear;
+	margin: 100px auto;
+	border: 1px solid #ccc;
 }
+
 header {
 	width: 140px;
 	height: 280px;
@@ -18,26 +19,73 @@ header {
 	border-right: 1px solid #ccc;
 	border-radius: 5px 0 0 5px;
 }
-header img {
+
+nav {
+	margin-top: 20px;
 }
-nav a {
+nav label {
 	display: block;
 	text-align: right;
-	padding-right: 20px;
-	font-size: 17px;
-	line-height: 25px;
+	padding-right: 40px;
+	font-size: 25px;
+	line-height: 40px;
 	text-decoration: none;
+	cursor: pointer;
 }
-nav a.current {
+
+section [type=radio] {
+  display: none;
 }
-nav a.current:before {
-	content: "• ";
-}
-section {
-	margin: 20px 20px 20px 200px;
-	display: none;
+
+section div {
+	margin-left: 180px;
+	width: 480px;
 	height: 280px;
+	top: 120px;
+	/*display: none;*/
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	opacity: 0;
+	position: absolute;
+	background-color: white;
+	font-size: 20px;
 }
-section.current {
-	display: block;
+
+section div h1 {
+	font-size: 40px;
 }
+section div p {
+	line-height: 25px;
+}
+
+[type=radio]:checked~div {
+	z-index: 1;
+	opacity: 1;
+	/*display: block;*/
+}
+
+.rtl {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+section b {
+    color: #999;
+    left: -50px;
+    position: absolute;
+    font-size: 25px;
+}
+section b:before {
+	content: "➤";
+}
+
+.github, .twitter, .linkedin, .viadeo {
+	padding: 0 5px 5px 30px;
+	background: url(links.png) no-repeat 0;
+}
+
+.github { background-position: 0 0 }
+.twitter { background-position: 0 -25px }
+.linkedin { background-position: 0 -50px }
+.viadeo { background-position: 0 -75px }
