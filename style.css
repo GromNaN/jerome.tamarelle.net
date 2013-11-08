@@ -81,7 +81,7 @@ section b:before {
 }
 
 .github, .twitter, .linkedin, .viadeo {
-	padding: 0 5px 5px 30px;
+	padding: 0 5px 2px 30px;
 	background: url(links.png) no-repeat 0;
 }
 
