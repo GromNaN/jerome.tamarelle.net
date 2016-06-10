@@ -286,6 +286,15 @@
 		width: 100%;
 	}
 
+	.copyright {
+		@include vendor('transition', 'opacity 0.5s ease-in-out');
+		opacity: 0.2;
+	}
+
+	.copyright:hover {
+		opacity: 0.9;
+	}
+
 /* Wide */
 
 	@include breakpoint(wide) {

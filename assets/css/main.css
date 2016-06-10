@@ -686,6 +686,18 @@
 		width: 100%;
 	}
 
+	.copyright {
+		-moz-transform: opacity 0.5s ease-in-out;
+		-webkit-transform: opacity 0.5s ease-in-out;
+		-ms-transform: opacity 0.5s ease-in-out;
+		transition: opacity 0.5s ease-in-out;
+		opacity: 0.2;
+	}
+
+	.copyright:hover {
+		opacity: 0.9;
+	}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
