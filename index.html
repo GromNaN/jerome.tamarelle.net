@@ -1,77 +1,50 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jérôme Tamarelle - Web Developer - GromNaN</title>
+		<meta name="description" content="Web Developer">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-	<title>Jérôme Tamarelle</title>
-	<meta name="description" content="Personal home page">
-	<meta name="author" content="Jérôme Tamarelle">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="style.css">
+				<!-- Header -->
+					<header id="header">
+						<h1>Jérôme Tamarelle</h1>
+						<p>Web Developer &nbsp;&bull;&nbsp; Paris &nbsp;&bull;&nbsp; Intuition driven</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/GromNaN" class="icon fa-twitter" rel="me" title="@GromNaN on Twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/GromNaN" class="icon fa-github" rel="me" title="@GromNaN on GitHub"><span class="label">GitHub</span></a></li>
+								<li><a href="https://gitlab.com/u/GromNaN" class="icon fa-gitlab" rel="me" title="@GromNaN on GitLab"><span class="label">GitLab</span></a></li>
+								<li><a href="http://stackoverflow.com/users/450789/gromnan" class="icon fa-stack-overflow" rel="me" title="@GromNaN on StackOverflow"><span class="label">StackOverflow</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jerometamarelle" class="icon fa-linkedin" rel="me" title="LinkedIn profile"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
+							</ul>
+						</nav>
+					</header>
 
-    <!--[if lt IE 9]><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script><![endif]-->
-</head>
-<body>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">Design by <a href="http://html5up.net" rel="nofollow">HTML5 UP</a>.</span>
+						<!-- Aerial by HTML5 UP html5up.net | @ajlkn -->
+					</footer>
 
-	<div id="container">
-		<header>
-			<img width="120" height="120" src="me.png" />
-			<nav>
-				<label for="profile">Profile</label>
-				<label for="code">Code</label>
-				<label for="contact">Contact</label>
-			</nav>
-		</header>
-
-		<section>
-			<input type="radio" id="profile" name="nav" checked="checked" />
-			<div>
-				<b style="top:150px"></b>
-				<h1>Hi, I'm Jérôme</h1>
-				<p>
-					My name is <strong>Jérôme Tamarelle</strong>, I'm 26 and I live near <strong>Paris</strong>. I'm a passionate developer and climber.
-				</p>
-				<p>
-					You can find me on the web with the <em>pseudonym</em> <strong>GromNaN</strong><!-- TODO: Add tip to explain why this name -->.
-				</p>
-				<p>
-					<a href="https://twitter.com/GromNaN" rel="me" class="twitter">Twitter</a>
-					<a href="https://github.com/GromNaN" rel="me" class="github">GitHub</a>
-					<a href="http://www.linkedin.com/in/jerometamarelle" rel="me" class="linkedin">LinkedIn</a>
-				</p>
 			</div>
-		</section>
-		<section>
-			<input type="radio" id="code" name="nav" />
-			<div>
-				<b style="top:190px"></b>
-				<h1>We code better together</h1>
-				<p>
-					As a professional web developer, I'm specialized in PHP and JavaScript programming languages.
-				</p>
-				<p>
-					Find my open-source contributions on <a href="https://github.com/GromNaN" title="See GromNaN on GitHub" rel="me" class="github">GitHub</a>
-				</p>
-			</div>
-		</section>
-		<section>
-			<input type="radio" id="contact" name="nav" />
-			<div>
-				<b style="top:230px"></b>
-				<h1>Get in touch ?</h1>
-				<p>
-					The best way for interacting with me is probably to send me an email: <a class="rtl" href="mailto:jerome@tamarelle.net">ten.elleramat@emorej</a>
-				</p>
-				<p>
-					You can also <a href="https://twitter.com/GromNaN" class="twitter" rel="me">tweet me</a> or <a href="https://github.com/GromNaN" class="github" rel="me">send me pull requests</a>
-				</p>
-			</div>
-		</section>
-	</div>
-
-<script src="//static.getclicky.com/js"></script>
-<script>try{ clicky.init(66631708); }catch(e){}</script>
-
-</body>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
