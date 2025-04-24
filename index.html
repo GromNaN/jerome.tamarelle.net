@@ -38,6 +38,10 @@
 						</ul>
 					</nav>
 				</header>
+				<section id="articles">
+					<h2>Mes derniers articles</h2>
+					<ul></ul>
+				</section>
 				<footer id="footer">
 					<span>Design by GitHub Copilot</span>
 				</footer>
@@ -45,6 +49,37 @@
 		</div>
 		<script>
 			window.onload = () => document.body.className = '';
+		</script>
+		<script>
+			function createArticleTemplate(article) {
+				const date = new Date(article.published_timestamp);
+				const formattedDate = date.toLocaleDateString("fr-FR", {year: "numeric", month: "long", day: "numeric"});
+
+				const langPrefix = article.language ? `[${article.language.toUpperCase()}]` : '[EN]';
+
+				return `
+					<li data-lang="${article.language}">
+						${langPrefix} <a href="${article.url}">${article.title}</a> publié le <span>${formattedDate}</span>
+					</li>
+				`;
+			}
+
+			document.addEventListener("DOMContentLoaded", async () => {
+				const articlesSection = document.getElementById("articles");
+				const response = await fetch("https://dev.to/api/articles?username=gromnan");
+				const articles = await response.json();
+
+				const ul = document.createElement("ul");
+				ul.style = "list-style: none; padding: 0;";
+
+				articles
+					.filter(article => article.title != '[Boost]')
+					.forEach(article => {
+						ul.innerHTML += createArticleTemplate(article);
+					});
+
+				articlesSection.appendChild(ul);
+			});
 		</script>
 	</body>
 </html>

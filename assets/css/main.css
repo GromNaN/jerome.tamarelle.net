@@ -7,7 +7,9 @@
 }
 
 html, body {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -20,6 +22,7 @@ html, body {
 
 body {
     background-color: var(--background-color);
+    margin-bottom: 50px;
 }
 
 header h1 {
@@ -27,7 +30,7 @@ header h1 {
 	color: var(--primary-color);
 }
 
-header h2 {
+h2 {
     font-size: 1em;
     padding-top: 1.5em;
 }
@@ -72,6 +75,20 @@ nav ul li a:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 	color: var(--primary-color);
+}
+
+#articles ul {
+    max-width: 110ex;
+    margin: 0 auto;
+    text-align: left;
+	list-style: none;
+	padding: 0;
+}
+
+#articles ul li {
+	list-style: none;
+	margin-bottom: 0.5em;
+	line-height: 1.5em;
 }
 
 #footer {
