@@ -3,64 +3,48 @@
 	<head>
 		<title>Jérôme Tamarelle - Web Developer - GromNaN</title>
 		<meta name="description" content="Web Developer">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<meta name="google-site-verification" content="6cdwVNPBbrCtC4w3-HZjSqwdmaCVURwog-gdmPI_4s8" />
-		<link rel="canonical" href="https://jerome.tamarelle.net/" />
-                <script type="application/ld+json">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org/",
 				"@type": "Person",
 				"name": "Jérôme Tamarelle",
-				"givenName": "Jérôme",
-				"familyName": "Tamarelle",
-				"homeLocation": "Paris, France",
+					"homeLocation": "Paris, France",
 				"jobTitle": "Web Developer",
 				"url": "https://jerome.tamarelle.net/"
 			}
 		</script>
 	</head>
-	<body class="loading">
+	<body>
 		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
 			<div id="main">
-
-				<!-- Header -->
-					<header id="header">
-						<h1>Jérôme Tamarelle</h1>
-						<p>Pouvoir <strong>Imaginer</strong> &nbsp;&bull;&nbsp; Devoir <strong>Anticiper</strong> &nbsp;&bull;&nbsp; Savoir <strong>Réagir</strong></p>
-						<nav>
-							<ul>
-								<li><a id="link-twitter" href="https://twitter.com/GromNaN" class="icon fa-twitter" rel="me" title="@GromNaN on Twitter"><span class="label">Twitter</span></a></li>
-								<li><a id="link-github" href="https://github.com/GromNaN" class="icon fa-github" rel="me" title="@GromNaN on GitHub"><span class="label">GitHub</span></a></li>
-								<li><a id="link-gitlab" href="https://gitlab.com/u/GromNaN" class="icon fa-gitlab" rel="me" title="@GromNaN on GitLab"><span class="label">GitLab</span></a></li>
-								<li><a id="link-stackoverflow" href="https://stackoverflow.com/users/450789/gromnan" class="icon fa-stack-overflow" rel="me" title="@GromNaN on StackOverflow"><span class="label">StackOverflow</span></a></li>
-								<li><a id="link-linkedin" href="https://www.linkedin.com/in/jerometamarelle" class="icon fa-linkedin" rel="me" title="LinkedIn profile"><span class="label">LinkedIn</span></a></li>
-								<li><a id="link-mastodon" href="https://phpc.social/@gromnan" class="" rel="me" title="@GromNaN on Mastodon"><span class="label">Mastodon</span></li></a>
-								<li><a id="link-devto" href="https://dev.to/gromnan/" class="" rel="me" title="@GromNaN on DEV.to community"><span class="label">DEV.to</span></li></a>
-								<!--<li><a id="link-email" href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">Design by <a id="link-html5up" href="https://html5up.net" rel="nofollow">HTML5 UP</a>.</span>
-						<!-- Aerial by HTML5 UP html5up.net | @ajlkn -->
-					</footer>
-
+				<header id="header">
+					<h1>Jérôme Tamarelle</h1>
+					<h3>Ma devise</h3>
+					<p>Pouvoir <strong>Imaginer</strong> &bull; Devoir <strong>Anticiper</strong> &bull; Savoir <strong>Réagir</strong></p>
+					<h3>Mes liens</h3>
+					<nav>
+						<ul>
+							<li><a href="https://github.com/GromNaN" title="GitHub"><i class="fa-brands fa-github"></i>GitHub</a></li>
+							<li><a href="https://dev.to/gromnan/" title="DEV.to"><i class="fa-brands fa-dev"></i>DEV.to</a></li>
+							<li><a href="https://phpc.social/@gromnan" title="Mastodon"><i class="fa-brands fa-mastodon"></i>Mastodon</a></li>
+							<li><a href="https://bsky.app/profile/jerome.tamarelle.net" title="Bluesky"><i class="fa-solid fa-cloud"></i>Bluesky</a></li>
+							<li><a href="https://twitter.com/GromNaN" title="Twitter"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+							<li><a href="https://stackoverflow.com/users/450789/gromnan" title="StackOverflow"><i class="fa-brands fa-stack-overflow"></i>StackOverflow</a></li>
+							<li><a href="https://www.linkedin.com/in/jerometamarelle" title="LinkedIn"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+						</ul>
+					</nav>
+				</header>
+				<footer id="footer">
+					<span>Design by GitHub Copilot</span>
+				</footer>
 			</div>
 		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			window.onload = () => document.body.className = '';
 		</script>
 	</body>
 </html>
