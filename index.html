@@ -12,7 +12,7 @@
 				"@context": "https://schema.org/",
 				"@type": "Person",
 				"name": "Jérôme Tamarelle",
-					"homeLocation": "Paris, France",
+				"homeLocation": "Paris, France",
 				"jobTitle": "Web Developer",
 				"url": "https://jerome.tamarelle.net/"
 			}
@@ -23,9 +23,9 @@
 			<div id="main">
 				<header id="header">
 					<h1>Jérôme Tamarelle</h1>
-					<h2>Ma devise</h2>
-					<p>Pouvoir <strong>Imaginer</strong> &bull; Devoir <strong>Anticiper</strong> &bull; Savoir <strong>Réagir</strong></p>
-					<h2>Mes liens</h2>
+					<h2 data-translate="motto">Ma devise</h2>
+					<p data-translate="motto_description">Pouvoir <strong>Imaginer</strong> &bull; Devoir <strong>Anticiper</strong> &bull; Savoir <strong>Réagir</strong></p>
+					<h2 data-translate="links">Mes liens</h2>
 					<nav>
 						<ul>
 							<li><a href="https://github.com/GromNaN" title="GitHub"><i class="fa-brands fa-github"></i>GitHub</a></li>
@@ -39,7 +39,7 @@
 					</nav>
 				</header>
 				<section id="articles">
-					<h2>Mes derniers articles</h2>
+					<h2 data-translate="articles">Mes derniers articles</h2>
 					<ul></ul>
 				</section>
 				<footer id="footer">
@@ -48,6 +48,97 @@
 			</div>
 		</div>
 		<script>
+			const translations = {
+				'en': {
+					'_lang': 'English',
+					'motto': 'My Motto',
+					'motto_description': 'Ability to <strong>Imagine</strong> &bull; Duty to <strong>Anticipate</strong> &bull; Capacity to <strong>React</strong>',
+					'links': 'My Links',
+					'articles': 'My Latest Articles',
+					'published_on': 'published on'
+				},
+				'fr': {
+					'_lang': 'Français',
+					'motto': 'Ma devise',
+					'motto_description': 'Pouvoir <strong>Imaginer</strong> &bull; Devoir <strong>Anticiper</strong> &bull; Savoir <strong>Réagir</strong>',
+					'links': 'Mes liens',
+					'articles': 'Mes derniers articles',
+					'published_on': 'publié le'
+				},
+				'es': {
+					'_lang': 'Español',
+					'motto': 'Mi Lema',
+					'motto_description': 'Poder <strong>Imaginar</strong> &bull; Deber <strong>Anticipar</strong> &bull; Saber <strong>Reaccionar</strong>',
+					'links': 'Mis Enlaces',
+					'articles': 'Mis Últimos Artículos',
+					'published_on': 'publicado el'
+				},
+				'de': {
+					'_lang': 'Deutsch',
+					'motto': 'Mein Motto',
+					'motto_description': 'Können <strong>Vorstellen</strong> &bull; Müssen <strong>Antizipieren</strong> &bull; Wissen <strong>Reagieren</strong>',
+					'links': 'Meine Links',
+					'articles': 'Meine Neuesten Artikel',
+					'published_on': 'veröffentlicht am'
+				},
+				'it': {
+					'_lang': 'Italiano',
+					'motto': 'Il Mio Motto',
+					'motto_description': 'Poter <strong>Immaginare</strong> &bull; Dover <strong>Anticipare</strong> &bull; Sapere <strong>Reagire</strong>',
+					'links': 'I Miei Link',
+					'articles': 'I Miei Ultimi Articoli',
+					'published_on': 'pubblicato il'
+				},
+				'zh': {
+					'_lang': '中文',
+					'motto': '我的座右铭',
+					'motto_description': '能够 <strong>想象</strong> &bull; 必须 <strong>预见</strong> &bull; 知道 <strong>反应</strong>',
+					'links': '我的链接',
+					'articles': '我的最新文章',
+					'published_on': '发表于'
+				},
+				'ja': {
+					'_lang': '日本語',
+					'motto': '私のモットー',
+					'motto_description': '<strong>想像</strong>する &bull; <strong>予測</strong>する &bull; <strong>反応</strong>する',
+					'links': '私のリンク',
+					'articles': '私の最新の記事',
+					'published_on': '公開日'
+				},
+				'ru': {
+					'_lang': 'Русский',
+					'motto': 'Мой девиз',
+					'motto_description': 'Уметь <strong>Представить</strong> &bull; Должен <strong>Предвидеть</strong> &bull; Знать <strong>Реагировать</strong>',
+					'links': 'Мои ссылки',
+					'articles': 'Мои последние статьи',
+					'published_on': 'опубликовано'
+				},
+				'ar': {
+					'_lang': 'العربية',
+					'motto': 'شعاري',
+					'motto_description': 'أن <strong>تتخيل</strong> &bull; أن <strong>تتوقع</strong> &bull; أن <strong>تتفاعل</strong>',
+					'links': 'روابطي',
+					'articles': 'أحدث مقالاتي',
+					'published_on': 'نشر في'
+				},
+				'br': {
+					'_lang': 'Brezhoneg',
+					'motto': 'Ma Ger-stur',
+					'motto_description': 'Gallout <strong>Imaginañ</strong> &bull; Ret <strong>Anticipañ</strong> &bull; Gouzout <strong>Reagisañ</strong>',
+					'links': 'Ma Liammoù',
+					'articles': 'Ma Pennadoù Diwezhañ',
+					'published_on': 'embannet d’an'
+				},
+				'eu': {
+					'_lang': 'Euskara',
+					'motto': 'Nire Leloa',
+					'motto_description': '<strong>Irudikatu</strong> &bull; <strong>Aurreikusi</strong> &bull; <strong>Erreakzionatu</strong>',
+					'links': 'Nire Loturak',
+					'articles': 'Nire Azken Artikuluak',
+					'published_on': 'argitaratua'
+				}
+			};
+
 			window.onload = () => document.body.className = '';
 		</script>
 		<script>
@@ -59,7 +150,7 @@
 
 				return `
 					<li data-lang="${article.language}">
-						${langPrefix} <a href="${article.url}">${article.title}</a> publié le <span>${formattedDate}</span>
+						${langPrefix} <a href="${article.url}">${article.title}</a> <span data-translate="published_on">publié le</span> <time datetime="${date.toISOString()}">${formattedDate}</time>
 					</li>
 				`;
 			}
@@ -79,6 +170,71 @@
 					});
 
 				articlesSection.appendChild(ul);
+			});
+		</script>
+		<script>
+			// Function to detect user's language
+			function getUserLanguage() {
+				return navigator.language || navigator.userLanguage;
+			}
+
+			// Function to get the language from the URL hash
+			function getLanguageFromHash() {
+				const hash = window.location.hash.substring(1); // Remove the '#' character
+				return translations[hash] ? hash : null;
+			}
+
+			// Function to translate content based on language
+			function translateContent(language) {
+				const selectedLang = translations[language] || translations['en'];
+
+				document.querySelectorAll('[data-translate]').forEach(element => {
+					const key = element.getAttribute('data-translate');
+					if (selectedLang[key]) {
+						element.innerHTML = selectedLang[key];
+					}
+				});
+
+				document.querySelectorAll('time').forEach(timeElement => {
+					const date = new Date(timeElement.getAttribute('datetime'));
+					timeElement.textContent = date.toLocaleDateString(language, { year: 'numeric', month: 'long', day: 'numeric' });
+				});
+
+				// Update the URL hash
+				window.location.hash = language;
+			}
+
+			// Add language selection menu
+			function addLanguageMenu() {
+				const menu = document.createElement('div');
+				menu.id = 'language-menu';
+				menu.style = 'position: absolute; top: 10px; right: 10px;';
+
+				const select = document.createElement('select');
+				select.id = 'language-selector';
+
+				Object.keys(translations).forEach(lang => {
+					const option = document.createElement('option');
+					option.value = lang;
+					option.textContent = translations[lang]._lang;
+					select.appendChild(option);
+				});
+
+				const userLang = getLanguageFromHash() || getUserLanguage().substring(0, 2);
+				select.value = translations[userLang] ? userLang : 'fr';
+
+				select.addEventListener('change', (event) => {
+					translateContent(event.target.value);
+				});
+
+				menu.appendChild(select);
+				document.body.appendChild(menu);
+			}
+
+			document.addEventListener('DOMContentLoaded', () => {
+				const userLang = getLanguageFromHash() || getUserLanguage().substring(0, 2);
+				translateContent(userLang);
+				addLanguageMenu();
 			});
 		</script>
 	</body>
