@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2c7400;
+    --primary-color: #0657a8;
     --secondary-color: #e5e5f7;
-    --background-color: #e1ebdb;
+    --background-color: #dbe3eb;
     --text-color: #333333;
-    --accent-color: #256100;
+    --accent-color: #0657a8;
 }
 
 html, body {
@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-    background-color: #e1ebdb;
+    background-color: var(--background-color);
 }
 
 header h1 {
@@ -27,7 +27,7 @@ header h1 {
 	color: var(--primary-color);
 }
 
-header h3 {
+header h2 {
     font-size: 1em;
     padding-top: 1.5em;
 }
